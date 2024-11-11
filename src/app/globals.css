@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+background-color: black;
+color:white;
+} */
+
+
+.headerContainer{
+  background-color: rgb(4, 4, 181);
+  color:rgb(234, 205, 18);
+  height:20%;
+
+}
+
+.headerButton{
+  display: flex;
+  text-align:center;
+  justify-content: center;
+  gap: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size:medium;
+}
+
+.footerContainer{
+  background-color: rgb(4, 4, 181);
+  color:rgb(234, 205, 18);
+  font-weight: bold;
+  max-height:100vh;
+  gap:10%;
+  display:flex;
+  /* flex-wrap: wrap; */
+}
+
+.footer_btn{
+  display:flex;
+  margin:2%;
+  /* position: absolute;
+  left:2%; */
+  align-items: left;
+  justify-content: left;
+  gap:5%;
+ 
+  /* min-height: 100%vh; */
+}
+
+#myName{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.my_image{
+  display:flex;
+  border: 1px solid white;
+  position: absolute;
+  right: 1%;
+  top:10%;
+  height:60%;
+  width:30%;
+  border-radius: 50%;
+  margin-right: 0%;
+  background-image: url("https://plus.unsplash.com/premium_photo-1724634778361-53d823f0aed3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  /* padding-left: 2%; */
+}
+
+.myIntro{
+  color:rgb(193, 153, 79);
+  display:inline-block;
+  border: 0px solid black;
+  height: 60%;
+  width:60%;
+  size: cover;
+/* margin-right: 2%; */
+font-size:6vw;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-decoration: solid;
+}
+
+.myLogo{
+  display:flex;
+  border: 2px solid black;
+  position: absolute;
+  left:1%;
+  max-height: 4%;
+  max-width: 15%;
+  size:cover;
+}
+
+
+/* .footer_btn1{
+  color:black;
+  text-align: center;
+  display: flex;
+} */
+
+
+.projects{
+  color:rgb(193, 153, 79);
+  display:inline-flex;
+  border: 2px solid white;
+  gap:10%;
+  margin: 5%;
+  align-items: center;
+  border-radius: 10%;
+  box-shadow: 0 0 60px 0 rgba(31, 27, 31, 0.8);
+  min-height: 8vh;
+  justify-content: center;
+  
+  /* min-height:30vh;
+  width:20vw;
+  text-align:center;
+  align-items: bottom;
+  flex-wrap: wrap; */
+}
+
+.heading{
+  color:white;
+  font-size: 5.5vw;
+  text-align: center;
+}
+
+.contact_link{
+
+  /* height:10vh; */
+  /* width: 5vw; */
+  border: 2px solid whitesmoke;
+  border-radius: 20%;
+  
+
+}
+
+.sub_heading{
+  color:gold;
+  text-align: center;
+  margin:5%;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+.my_skills{
+display: flex;
+border:2px solid white;
+justify-content: center;
+border-radius: 20%;
+box-shadow: 0px 0px 60px 0px rgba(83, 74, 83, 0.8);
+margin: 2% 5% 2% 2%;
+min-height:30vh;
+max-width:20vw;
+align-items: center;
+flex-wrap: wrap;
+
+
+
+}
+
+.imaging img{
+  display: inline-flex;
+  height: 100%;
+  width:100%;
+  border: 2px solid white;
+   overflow: hidden;
+   object-fit: contain;
+   border-radius: 40%;
+   
+
+}
+
+.parentForSkills{
+  display: inline-flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+
+}
+
+.projects:hover{
+  animation : mySkills 2s ease-in-out infinite forwards;
+}
+
+.my_skills:hover{
+  animation : mySkills 2s ease-in-out infinite forwards;
+}
+
+@keyframes mySkills {
+
+  20%{
+    border: 2px solid rgb(253, 217, 102);
+    box-shadow: 0 0 10px 0 rgb(248, 227, 132)
+
+  };
+
+  40%{
+    border: 2px solid rgba(232, 181, 13, 0.783);
+    box-shadow: 0 0 10px 0 rgb(252, 221, 82)
+  };
+
+  60%{
+    border: 2px solid rgb(227, 187, 10);
+    box-shadow: 0 0 10px 0 rgb(255, 182, 10)
+  };
+
+  80%{
+    border: 2px solid rgb(29, 29, 55);
+    box-shadow: 0 0 10px 0 rgb(205, 157, 25)
+  
+  };
+
+  100%{
+    border: 2px solid burlywood;
+    box-shadow: 0 0 10px 0 rgb(186, 156, 23)
+  };
+
+}
+
+@media only screen and (max-width:600px){
+  .my_skills{
+    width:10%;
+  }
+}
+  
+@media only screen and (min-width:590px){
+  .my_skills{
+    width:60%;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .sub_heading{
+    font-size: 1vh;
+  }
+}
+
+@media only screen and (min-width:550px){
+  .sub_heading{
+    font-size:2vh;
+  }
+}
+
+@media only screen and (max-width:650px){
+  .my_image{
+    height:10%;
+    width:20%;
+    
+  }
+}
+  
+@media only screen and (min-width:640px){
+  .my_image{
+   height:60%;
+   width:30%;
+  }
+}
+
+.header_items:hover{
+ border-bottom: 3px solid white
+}
+
+.contact_link:hover{
+
+  border: 3px solid goldenrod
+ }
+ 
